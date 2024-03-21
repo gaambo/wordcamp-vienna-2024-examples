@@ -1,0 +1,33 @@
+{
+  "name": "wc-vienna-2024",
+  "version": "1.0.0",
+  "description": "my talk at wordcamp vienna 2024 about react components in wp-admin",
+  "scripts": {
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "start": "wp-scripts start",
+    "dev:start": "wp-env start",
+    "dev:stop": "wp-env stop"
+  },
+  "author": {
+    "name": "Fabian Todt",
+    "email": "mail@fabiantodt.at",
+    "url": "https://fabiantodt.at"
+  },
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@goodwp/goodenberg": "0.1.0",
+    "@wordpress/components": "^27.2.0",
+    "@wordpress/dom-ready": "^3.54.0",
+    "@wordpress/element": "^5.31.0",
+    "@wordpress/i18n": "^4.54.0"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^9.5.0",
+    "@wordpress/scripts": "^27.4.0"
+  }
+}
