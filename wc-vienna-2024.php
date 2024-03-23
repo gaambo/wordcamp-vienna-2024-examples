@@ -3,15 +3,15 @@
 /**
  * Plugin Name:       WC Vienna 2024
  * Description:       Example block scaffolded with Create Block tool.
- * Requires at least: 6.1
- * Requires PHP:      7.0
+ * Requires at least: 6.4
+ * Requires PHP:      8.0
  * Version:           0.1.0
  * Author:            Fabian Todt
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       wc-vienna-2024
  *
- * @package           wcv24
+ * @package           wc-vienna-2024
  */
 
 if (!defined('ABSPATH')) {
