@@ -12,6 +12,10 @@ A plugin providing examples of @wordpress/component package for my [talk at Word
 
 === To run the examples: ===
 
+**Test via WordPress Playground in browser**
+
+https://playground.wordpress.net/#{%22landingPage%22:%20%22/wp-admin/admin.php?page=wc-vienna-2024%22,%22steps%22:%20[{%22step%22:%20%22login%22},{%22step%22:%20%22installPlugin%22,%22pluginZipFile%22:%20{%22resource%22:%20%22url%22,%22url%22:%20%22https://raw.githubusercontent.com/gaambo/wordcamp-vienna-2024-examples/main/wc-vienna-2024.zip%22},%22options%22:%20{%22activate%22:%20true}}]}
+
 **Run in existing WordPress installation**
 Download `wc-vienna-2024.zip` from GitHub and install in your WordPress site.
 
