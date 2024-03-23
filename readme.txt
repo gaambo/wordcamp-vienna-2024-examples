@@ -10,8 +10,12 @@ A plugin providing examples of @wordpress/component package for my [talk at Word
 
 == Description ==
 
-To run the examples:
+=== To run the examples: ===
 
+**Run in existing WordPress installation**
+Download `wc-vienna-2024.zip` from GitHub and install in your WordPress site.
+
+**Run local environment**
 1. Get code: `git clone git@github.com:gaambo/wordcamp-vienna-2024-examples.git`
 2. Run `npm install`
 3. Run `npm run dev:start`
