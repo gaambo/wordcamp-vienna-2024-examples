@@ -2,7 +2,7 @@ import { createRoot } from "@wordpress/element";
 import domReady from "@wordpress/dom-ready";
 import { TabPanel } from "@wordpress/components";
 import { __ } from "@wordpress/i18n";
-import { Page, PageHeader, PageContent } from "@goodwp/goodenberg/admin/components/page";
+import { Page, Container } from "@goodwp/goodenberg/admin/components";
 import InputsControls from "./inputs-controls";
 import BasicComponents from "./basic-components";
 import CardsPanels from "./cards-panels";
@@ -40,10 +40,10 @@ const StyledTabPanel = styled(TabPanel)`
 const ExamplePage = () => {
   return (
     <Page name="wc-vienna-2024">
-      <PageHeader title={__("WordCamp Vienna 2024", "wc-vienna-2024")} icon="wordpress">
+      <Page.Header title={__("WordCamp Vienna 2024", "wc-vienna-2024")} icon="wordpress">
         {__("Example Components", "wc-vienna-2024")}
-      </PageHeader>
-      <PageContent hasMargin={false}>
+      </Page.Header>
+      <Container hasMargin={false}>
         <StyledTabPanel
           className="wc-vienna-2024-tabs"
           tabs={TABS}
@@ -52,7 +52,7 @@ const ExamplePage = () => {
             return <Tab.Component />;
           }}
         />
-      </PageContent>
+      </Container>
     </Page>
   );
 };

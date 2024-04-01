@@ -14,11 +14,11 @@ import {
   __experimentalVStack as VStack,
 } from "@wordpress/components";
 import { __ } from "@wordpress/i18n";
-import { PageContent } from "@goodwp/goodenberg/admin/components/page";
+import { Page, Container } from "@goodwp/goodenberg/admin/components";
 
 export default () => {
   return (
-    <PageContent.Container as="div" hasMargin contained>
+    <Container as="div" hasMargin contained>
       <VStack spacing={5}>
         <Panel header={__("Panel", "wc-vienna-2024")}>
           <PanelBody title={__("Panel Body", "wc-vienna-2024")}>
@@ -57,6 +57,6 @@ export default () => {
           </CardFooter>
         </Card>
       </VStack>
-    </PageContent.Container>
+    </Container>
   );
 };

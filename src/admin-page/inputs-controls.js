@@ -18,7 +18,7 @@ import {
   __experimentalToggleGroupControlOption as ToggleGroupControlOption,
 } from "@wordpress/components";
 import { __ } from "@wordpress/i18n";
-import { PageContent } from "@goodwp/goodenberg/admin/components/page";
+import { Page, Container } from "@goodwp/goodenberg/admin/components";
 
 export default () => {
   // `useBaseControlProps` is a convenience hook to get the props for the `BaseControl`
@@ -35,7 +35,7 @@ export default () => {
   const [radioValue, setRadioValue] = useState("a");
 
   return (
-    <PageContent.Container contained={"300px"} as="div" hasMargin>
+    <Container contained={"300px"} as="div" hasMargin>
       <Panel header={__("Form Inputs & Controls", "wc-vienna-2024")}>
         <PanelBody title={__("Basic Inputs", "wc-vienna-2024")}>
           <VStack spacing={5}>
@@ -145,6 +145,6 @@ export default () => {
           </VStack>
         </PanelBody>
       </Panel>
-    </PageContent.Container>
+    </Container>
   );
 };

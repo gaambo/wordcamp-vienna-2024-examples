@@ -1,6 +1,6 @@
 {
   "name": "wc-vienna-2024",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "my talk at wordcamp vienna 2024 about react components in wp-admin",
   "scripts": {
     "build": "wp-scripts build",
@@ -20,7 +20,7 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@goodwp/goodenberg": "0.1.0",
+    "@goodwp/goodenberg": "^0.1.2",
     "@wordpress/components": "^27.2.0",
     "@wordpress/dom-ready": "^3.54.0",
     "@wordpress/element": "^5.31.0",

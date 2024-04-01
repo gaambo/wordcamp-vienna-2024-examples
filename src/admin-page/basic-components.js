@@ -12,7 +12,7 @@ import {
   Snackbar,
 } from "@wordpress/components";
 import { __ } from "@wordpress/i18n";
-import { PageContent } from "@goodwp/goodenberg/admin/components/page";
+import { Page, Container } from "@goodwp/goodenberg/admin/components";
 import styled from "@emotion/styled";
 
 const StyledModal = styled(Modal)`
@@ -22,7 +22,7 @@ const StyledModal = styled(Modal)`
 export default () => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <PageContent.Container contained={"300px"} as="div" hasMargin>
+    <Container contained={"300px"} as="div" hasMargin>
       <Panel header={__("Basic Components", "wc-vienna-2024")}>
         <PanelBody title={__("Buttons", "wc-vienna-2024")}>
           <VStack spacing={5}>
@@ -81,6 +81,6 @@ export default () => {
           </p>
         </StyledModal>
       )}
-    </PageContent.Container>
+    </Container>
   );
 };
