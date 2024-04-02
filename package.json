@@ -1,6 +1,6 @@
 {
   "name": "wc-vienna-2024",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "my talk at wordcamp vienna 2024 about react components in wp-admin",
   "scripts": {
     "build": "wp-scripts build",

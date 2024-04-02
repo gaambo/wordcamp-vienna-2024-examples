@@ -11,11 +11,10 @@ import {
   RadioControl,
   RangeControl,
   SelectControl,
-  DatePicker,
   DateTimePicker,
   useBaseControlProps,
-  __experimentalToggleGroupControl as ToggleGroupControl,
-  __experimentalToggleGroupControlOption as ToggleGroupControlOption,
+  ColorPalette,
+  FormTokenField,
 } from "@wordpress/components";
 import { __ } from "@wordpress/i18n";
 import { Page, Container } from "@goodwp/goodenberg/admin/components";
@@ -33,6 +32,8 @@ export default () => {
   const [selectValue, setSelectValue] = useState("a");
   const [checkedValue, setCheckedValue] = useState(false);
   const [radioValue, setRadioValue] = useState("a");
+  const [colorValue, setColorValue] = useState("");
+  const [tokenValue, setTokenValue] = useState([]);
 
   return (
     <Container contained={"300px"} as="div" hasMargin>
@@ -120,14 +121,11 @@ export default () => {
               value={selectValue}
               onChange={setSelectValue}
             />
+            <FormTokenField label={__("Tags", "wc-vienna-2024")} value={tokenValue} onChange={setTokenValue} />
           </VStack>
         </PanelBody>
         <PanelBody title={__("Advanced Inputs", "wc-vienna-2024")} initialOpen={false}>
           <VStack spacing={5}>
-            <ToggleGroupControl label={__("Toggle Group Control", "wc-vienna-2024")} value="vertical" isBlock>
-              <ToggleGroupControlOption value="horizontal" label={__("Horizontal", "wc-vienna-2024")} />
-              <ToggleGroupControlOption value="vertical" label={__("Vertical", "wc-vienna-2024")} />
-            </ToggleGroupControl>
             <RangeControl
               help={__("Value between 0 and 100", "wc-vienna-2024")}
               label={__("Numeric Value", "wc-vienna-2024")}
@@ -136,9 +134,24 @@ export default () => {
               value={rangeValue}
               onChange={setRangeValue}
             />
-            <BaseControl label={__("Date Picker", "wc-vienna-2024")}>
-              <DatePicker />
-            </BaseControl>
+            <ColorPalette
+              colors={[
+                {
+                  color: "#f7a600",
+                  name: "Yellow",
+                },
+                {
+                  color: "#164194",
+                  name: "Blue",
+                },
+                {
+                  color: "#0fa3b1",
+                  name: "Primary",
+                },
+              ]}
+              value={colorValue}
+              onChange={setColorValue}
+            />
             <BaseControl label={__("Date Time Picker", "wc-vienna-2024")}>
               <DateTimePicker />
             </BaseControl>
